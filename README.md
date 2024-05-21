@@ -1,5 +1,5 @@
 
-**Project Name: Micro-learning AI Powered Plateform**
+**Project Name: Micro-learning AI-Powered Platform**
 
 **Description:**
 
@@ -29,7 +29,7 @@ This project builds an AI-powered microlearning platform leveraging FastAPI (Pyt
 
    ```bash
    python -m venv venv
-   source venv/bin/activate  # Linux/macOS
+   source .venv/bin/activate  # Linux/macOS
    .venv\Scripts\activate  # Windows
    ```
 
@@ -60,6 +60,12 @@ This project builds an AI-powered microlearning platform leveraging FastAPI (Pyt
 
      Open http://localhost:8000/docs in your web browser to explore the API documentation (OpenAPI/Swagger).
 
+
+
+https://github.com/Roshk01/Microlearning/assets/102040386/bf98a078-2658-4add-b5dc-129b8f1a64ab
+
+
+
 **2. Frontend:**
 
    - **Start the development server:**
@@ -73,9 +79,13 @@ This project builds an AI-powered microlearning platform leveraging FastAPI (Pyt
 
      Open http://localhost:3000 in your web browser to experience the user interface.
 
+     
+https://github.com/Roshk01/Microlearning/assets/102040386/9ea94c50-ad87-4a29-bf15-923656961d77
+
+
 **Fetching Processes:**
 
-The specific fetching processes will depend on your backend API design and frontend implementation. Here's a general outline:
+The specific fetching processes will depend on your backend API design and front-end implementation. Here's a general outline:
 
 **Backend:**
 
@@ -83,11 +93,20 @@ The specific fetching processes will depend on your backend API design and front
 - Implement logic to retrieve and process data using FastAPI and transformers
 - Return JSON responses with relevant content and potentially AI-generated summaries
 
+https://github.com/Roshk01/Microlearning/assets/102040386/befa11e9-f6c2-4d9e-8a41-40c0596de132
+
+
 **Frontend:**
 
 - Integrate with the backend API using appropriate HTTP client libraries (e.g., Axios in React)
 - Make API calls to fetch data based on user interactions and display relevant content
 - Optionally, display summaries generated at the backend or implement client-side summarization using transformers
+  
+
+
+https://github.com/Roshk01/Microlearning/assets/102040386/5795e14d-5738-45ff-9929-ad8a52d06430
+
+
 
 **Deployment:**
 
