@@ -20,7 +20,7 @@ from sklearn.feature_extraction.text import TfidfVectorizer
 # In[47]:
 
 
-data3 = pd.read_csv('final2.csv')
+data3 = pd.read_csv('micro_streamlit/final2.csv')
 
 
 # In[5]:
