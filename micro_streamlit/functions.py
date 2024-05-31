@@ -139,8 +139,8 @@ similar = cosine_similarity(vector)
 # In[29]:
 
 
-summarizer = pipeline("summarization", model="facebook/bart-base")
-text_generator = pipeline("text-generation", model="gpt2")
+summarizer = pipeline("summarization", model="facebook/bart-base", tokenizer="facebook/bart-base")
+text_generator = pipeline("text-generation", model="gpt2", tokenizer="gpt2")
 
 
 # In[34]:
