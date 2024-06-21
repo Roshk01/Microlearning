@@ -1,5 +1,14 @@
 from transformers import pipeline
 from transformers import TrainingArguments, Trainer, AutoModelForSeq2SeqLM
+from transformers import BartTokenizer, BartModel
+
+tokenizer = BartTokenizer.from_pretrained('facebook/bart-base')
+model = BartModel.from_pretrained('facebook/bart-base')
+
+inputs = tokenizer("Hello, my dog is cute", return_tensors="pt")
+outputs = model(**inputs)
+
+last_hidden_states = outputs.last_hidden_state
 
 
 # In[2]:
@@ -20,7 +29,7 @@ from sklearn.feature_extraction.text import TfidfVectorizer
 # In[47]:
 
 
-data3 = pd.read_csv('final2.csv')
+data3 = pd.read_csv('micro_streamlit/final2.csv')
 
 
 # In[5]:
@@ -139,8 +148,8 @@ similar = cosine_similarity(vector)
 # In[29]:
 
 
-summarizer = pipeline("summarization", model="facebook/bart-base")
-text_generator = pipeline("text-generation", model="gpt2")
+summarizer = pipeline("summarization", model="facebook/bart-large-cnn")
+text_generator = pipeline("text-generation", model="gpt2", tokenizer="gpt2")
 
 
 # In[34]:
